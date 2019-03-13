@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: aqua;
+  background: url("https://cdn.shopify.com/s/files/1/0181/4271/products/Vida_en_el_arrecife_de_coral.jpg?v=1476723264.jpg");
+  background-size: 100%;
+}
+
+div {
+  height: 350px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: pink;
+  margin: 60px 0 0 0;
+}
+
+    ul {
+      padding: 10px;
+      background: rgba(80,110,204,0.5);
+      text-align: center;
+    }
+    li {
+      font-family: cursive; 
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    
+    }
+
+h2 {
+  font-family: 'Coiny', cursive;
+  text-align: center;
+  font-size: 45px;
+  color: turquoise;0
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  font-family: 'Merriweather' , serif
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<ul>
+      <li><button onclick="Drinks()">Drinks</button></li>
+      <li><button onclick="Lunch()">Lunch</button></li>
+      <li><button onclick="Desserts()">Desserts</button></li>
+    </ul>
+<h1>Perla de la Bahia</h1>
+<h2> Latino restaurant & bar</h2>
+<div id="Reyes"></div>
+
+<script>
+
+drinkImages = [
+  'url("https://naturopathicearth.com/wp-content/uploads/2018/06/40792838441_0bc0d5e318_b.jpg")',
+  'url("https://www.cookingclassy.com/wp-content/uploads/2018/10/hot-chocolate-15.jpg")',
+  'url("https://busites-www.s3.amazonaws.com/blog-margaritaville/2016/01/shutterstock_124173244.jpgshutterstock_124173244-694x533.jpg")',
+] 
+
+LunchImages = [
+  'url("https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/shrimp-ceviche-tostadas-su.jpg?itok=CdP8cjZ_")', 
+  'url("https://ls.imgix.net/recipes/thumbnails/bbqribsheatbead%20resized.jpg?w=620&h=310&auto=compress,format&fit=crop  ")',
+  'url("https://www.themerchantbaker.com/wp-content/uploads/2016/05/Strawberry-Tres-Leches-Cake-9-NEW.jpg")',
+]
+
+DessertsImages = [
+  'url("https://assets.epicurious.com/photos/57631b31ff66dde1456dfed2/master/pass/the-perfect-flan.jpg")',
+  'url("https://www.dawnfoods.com/images/default-source/Recipe-Images/conchas.png")',
+  'url("https://www.tasteandtellblog.com/wp-content/uploads/2016/08/Banana-Split-Cupcakes-tasteandtellblog.com-1-lr.jpg")',
+
+]
+
+
+
+function Drinks() {
+  Dean = document.getElementById("Reyes")
+  Dean.innerHTML = ''
+  Dean.innerHTML += drinksDivs[0]
+  Dean.innerHTML += drinksDivs[1]
+  Dean.innerHTML += drinksDivs[2]
+  //alert ("You have chosen to see Drinks")
+  items = document.getElementsByClassName("item")
+    items[0].style.background = drinkImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = drinkImages[1]
+    items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = drinkImages[2] 
+    items[2].style.backgroundSize = '100% 100%'
+}
+
+function Lunch() {
+  Sam = document.getElementById("Reyes")
+  Sam.innerHTML = ''
+  Sam.innerHTML += lunchDivs[0]
+  Sam.innerHTML += lunchDivs[1]
+  Sam.innerHTML += lunchDivs[2]
+  //alert ("You have chosen to see Lunch")
+  items = document.getElementsByClassName("item")
+    items[0].style.background = LunchImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = LunchImages[1]
+    items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = LunchImages[2]
+    items[2].style.backgroundSize = '100% 100%'
+}
+
+function Desserts() {
+  Cass = document.getElementById("Reyes")
+  Cass.innerHTML = ''
+  Cass.innerHTML += dessertsDivs[0]
+  Cass.innerHTML += dessertsDivs[1]
+  Cass.innerHTML += dessertsDivs[2]
+  //alert ("You have chosen to see Desserts")
+  items = document.getElementsByClassName("item")
+    items[0].style.background = DessertsImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = DessertsImages[1]
+    items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = DessertsImages[2]
+    items[2].style.backgroundSize = '100% 100%'
+}
+
+
+
+
+drinksDivs = [
+  '<div class="item"><p>Horchata <spanclass="price">$3.50</span><br /><small>In the Central American countries of El Salvador, Nicaragua, Honduras, and Costa Rica, horchata refers to the drink known as semilla de jicaro, made from the jicaro seeds ground with rice and spices such as ground cocoa, cinnamon, sesame seeds, nutmeg, tiger nuts and vanilla</small></p></div>',
+  
+  '<div class="item"><p>Hot chocolate <spanclass="price">$2.50</span><br /><small>Brownies, bars, cakes and puddings deliver when the heart is set on a bite of chocolate. But when the winter chill sets in, there are few things more satisfying than a steaming mug of hot chocolate</small></p></div>',
+  
+  '<div class="item"><p>Piña Colada <spanclass="price">$4.65</span><br /><small>Love this recipe absolutely perfect but I will experiment with other rum such as mango pineapple banana rum they have all kinds of different rums but this stuff is very good as the way it is whipped up in a Ninja blender with a breeze to make and yeah it will rock your effing world</small></p></div>',
+]
+  
+lunchDivs = [
+  
+  '<div class="item"><p>Ceviche <spanclass="price">$17</span><br /><small>Consists of raw seafood tossed with an acidic marinade that “cooks” the fish. In this shrimp ceviche recipe, we cook the shrimp before marinating it in lemon, lime and orange juices, plus chiles for some heat</small></p></div>',
+  
+  '<div class="item"><p>Asado <spanclass="price">$24</span><br /><small>The parrilla is the grandmaster of all grilling devices, an extraordinary tool that captures the primal essence of cooking meat with just salt and fire</small></p></div>',
+  
+  '<div class="item"><p>Tres Leches <spanclass="price">$8</span><br /><small>The BEST authentic homemade Tres Leches Cake. An ultra light cake soaked in a sweet milk mixture and topped with fresh whipped cream and cinnamon. This simple Mexican dessert is one of our favorites!</small></p></div>',
+]
+  
+dessertsDivs = [
+  
+  '<div class="item"><p>Flan <span class="price">$6.65</span><br /><small>Like many other Iberian desserts, flan is a simple alchemy of eggs, milk and sugar. Leche merengada, pudim de leite and a dense version made with only egg yolks and sugar called tocino de cielo, or heavenly lard, are all variations on the theme</small></p></div>',
+  
+  '<div class="item"><p>Conchas <span class="price">$1.50</span><br /><small>The bread base of a concha is the same dough used for Pan de Muertos, Rosca de Reyes, and Pan de Huevo. In fact, all of these breads mentioned are variations of Pan de Huevo. The toppings are simply changed for variety</small></p></div>',
+  
+  '<div class="item"><p>Cupcakes <span class="price">$1</span><br /><small>Cupcakes. Sweet, decadent, fun, playful, indulgent cupcakes. These little hand-held delights are the hit at parties and are even big at weddings now. Everyone loves cupcakes and here are 35 amazing recipes to get you drooling!</small></p></div>',
+
+]
+
+
+  
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>

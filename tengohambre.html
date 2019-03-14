@@ -127,18 +127,27 @@ drinkImages = [
   'url("https://naturopathicearth.com/wp-content/uploads/2018/06/40792838441_0bc0d5e318_b.jpg")',
   'url("https://www.cookingclassy.com/wp-content/uploads/2018/10/hot-chocolate-15.jpg")',
   'url("https://busites-www.s3.amazonaws.com/blog-margaritaville/2016/01/shutterstock_124173244.jpgshutterstock_124173244-694x533.jpg")',
+  'url("http://www.trouville.uy/saltoclub/wp-content/uploads/2016/02/app_0016_Licuados.jpg")',
+  'url("https://marikosakata.com/wp-content/uploads/2016/07/jamaica-tea-hero-web.jpg")',
+  'url("https://wealthinwellness.biz/wp-content/uploads/2016/10/sodas-diabetes-1.jpg")',
 ] 
 
 LunchImages = [
   'url("https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/shrimp-ceviche-tostadas-su.jpg?itok=CdP8cjZ_")', 
   'url("https://ls.imgix.net/recipes/thumbnails/bbqribsheatbead%20resized.jpg?w=620&h=310&auto=compress,format&fit=crop  ")',
   'url("https://www.themerchantbaker.com/wp-content/uploads/2016/05/Strawberry-Tres-Leches-Cake-9-NEW.jpg")',
+  'url("https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/Baleadas-%28tortillas-with-cheese%2C-beans-and-chorizo%29-recipe-image.jpg?itok=0rZ4CqBm")',
+  'url("https://cdn.kiwilimon.com/recetaimagen/2806/th5-640x426-25790.jpg")',
+  'url("https://www.simplyrecipes.com/wp-content/uploads/2018/07/Pulled-Jackfruit-Tacos-LEAD-3.jpg")',
 ]
 
 DessertsImages = [
   'url("https://assets.epicurious.com/photos/57631b31ff66dde1456dfed2/master/pass/the-perfect-flan.jpg")',
   'url("https://www.dawnfoods.com/images/default-source/Recipe-Images/conchas.png")',
   'url("https://www.tasteandtellblog.com/wp-content/uploads/2016/08/Banana-Split-Cupcakes-tasteandtellblog.com-1-lr.jpg")',
+  'url("https://www.vvsupremo.com/wp-content/uploads/2015/11/900X570_Pandebono-Columbian-Cheese-Bread.jpg")',
+  'url("https://dam.cocinafacil.com.mx/wp-content/uploads/2018/10/arroz-con-leche.jpg")',
+  'url("https://www.wideopeneats.com/wp-content/uploads/2017/10/Baked-Cinnamon-Churros.jpg")',
 
 ]
 
@@ -150,6 +159,9 @@ function Drinks() {
   Dean.innerHTML += drinksDivs[0]
   Dean.innerHTML += drinksDivs[1]
   Dean.innerHTML += drinksDivs[2]
+  Dean.innerHTML += drinksDivs[3]
+  Dean.innerHTML += drinksDivs[4]
+  Dean.innerHTML += drinksDivs[5]
   //alert ("You have chosen to see Drinks")
   items = document.getElementsByClassName("item")
     items[0].style.background = drinkImages[0]
@@ -158,6 +170,12 @@ function Drinks() {
     items[1].style.backgroundSize = '100% 100%'
     items[2].style.background = drinkImages[2] 
     items[2].style.backgroundSize = '100% 100%'
+    items[3].style.background = drinkImages[3] 
+    items[3].style.backgroundSize = '100% 100%'
+    items[4].style.background = drinkImages[4] 
+    items[4].style.backgroundSize = '100% 100%'
+    items[5].style.background = drinkImages[5] 
+    items[5].style.backgroundSize = '100% 100%'
 }
 
 function Lunch() {
@@ -166,6 +184,9 @@ function Lunch() {
   Sam.innerHTML += lunchDivs[0]
   Sam.innerHTML += lunchDivs[1]
   Sam.innerHTML += lunchDivs[2]
+  Sam.innerHTML += lunchDivs[3]
+  Sam.innerHTML += lunchDivs[4]
+  Sam.innerHTML += lunchDivs[5]
   //alert ("You have chosen to see Lunch")
   items = document.getElementsByClassName("item")
     items[0].style.background = LunchImages[0]
@@ -174,6 +195,12 @@ function Lunch() {
     items[1].style.backgroundSize = '100% 100%'
     items[2].style.background = LunchImages[2]
     items[2].style.backgroundSize = '100% 100%'
+    items[3].style.background = LunchImages[3]
+    items[3].style.backgroundSize = '100% 100%'
+    items[4].style.background = LunchImages[4]
+    items[4].style.backgroundSize = '100% 100%'
+    items[5].style.background = LunchImages[5]
+    items[5].style.backgroundSize = '100% 100%'
 }
 
 function Desserts() {
@@ -182,6 +209,9 @@ function Desserts() {
   Cass.innerHTML += dessertsDivs[0]
   Cass.innerHTML += dessertsDivs[1]
   Cass.innerHTML += dessertsDivs[2]
+  Cass.innerHTML += dessertsDivs[3]
+  Cass.innerHTML += dessertsDivs[4]
+  Cass.innerHTML += dessertsDivs[5]
   //alert ("You have chosen to see Desserts")
   items = document.getElementsByClassName("item")
     items[0].style.background = DessertsImages[0]
@@ -190,6 +220,13 @@ function Desserts() {
     items[1].style.backgroundSize = '100% 100%'
     items[2].style.background = DessertsImages[2]
     items[2].style.backgroundSize = '100% 100%'
+    items[3].style.background = DessertsImages[3]
+    items[3].style.backgroundSize = '100% 100%'
+    items[4].style.background = DessertsImages[4]
+    items[4].style.backgroundSize = '100% 100%'
+    items[5].style.background = DessertsImages[5]
+    items[5].style.backgroundSize = '100% 100%'
+ 
 }
 
 
@@ -201,6 +238,13 @@ drinksDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Hot chocolate <spanclass="price">$2.50</span><br /><small>Brownies, bars, cakes and puddings deliver when the heart is set on a bite of chocolate. But when the winter chill sets in, there are few things more satisfying than a steaming mug of hot chocolate</small></p></div>',
   
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Piña Colada <spanclass="price">$4.65</span><br /><small>Love this recipe absolutely perfect but I will experiment with other rum such as mango pineapple banana rum they have all kinds of different rums but this stuff is very good as the way it is whipped up in a Ninja blender with a breeze to make and yeah it will rock your effing world</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Licuado <spanclass="price">$5.50</span><br /><small>are a Latin American handmade blended beverage similar to smoothies, made with milk, fruit, and usually ice</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Agua de Jamaica <spanclass="price">$4.50</span><br /><small>is a typical agua fresca to accompany the mid-day meal in Mexico. It is sweet, tart, delicious and really refreshing all at the same time</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Sodas <spanclass="price">$1</span><br /><small>A soft drink is a drink that typically contains carbonated water, a sweetener, and a natural or artificial flavoring</small></p></div>',
+  
 ]
   
 lunchDivs = [
@@ -219,6 +263,8 @@ dessertsDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Conchas <span class="price">$1.50</span><br /><small>The bread base of a concha is the same dough used for Pan de Muertos, Rosca de Reyes, and Pan de Huevo. In fact, all of these breads mentioned are variations of Pan de Huevo. The toppings are simply changed for variety</small></p></div>',
   
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Cupcakes <span class="price">$1</span><br /><small>Cupcakes. Sweet, decadent, fun, playful, indulgent cupcakes. These little hand-held delights are the hit at parties and are even big at weddings now. Everyone loves cupcakes and here are 35 amazing recipes to get you drooling!</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>    <span class="price">$1</span><br /><small>    </small></p></div>',
 
 ]
 

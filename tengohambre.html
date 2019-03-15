@@ -116,6 +116,7 @@ small {
       <li><button onclick="Drinks()">Drinks</button></li>
       <li><button onclick="Lunch()">Lunch</button></li>
       <li><button onclick="Desserts()">Desserts</button></li>
+      <li><button onclick="Salads()">Salads</button></li>
     </ul>
 <h1>Perla de la Bahia</h1>
 <h2> Latino restaurant & bar</h2>
@@ -148,6 +149,18 @@ DessertsImages = [
   'url("https://www.vvsupremo.com/wp-content/uploads/2015/11/900X570_Pandebono-Columbian-Cheese-Bread.jpg")',
   'url("https://dam.cocinafacil.com.mx/wp-content/uploads/2018/10/arroz-con-leche.jpg")',
   'url("https://www.wideopeneats.com/wp-content/uploads/2017/10/Baked-Cinnamon-Churros.jpg")',
+  
+  
+]
+  
+ SaladsImages = [
+   'url("https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg")',
+   'url("https://pioneerwoman.files.wordpress.com/2018/06/chicken-waldorf-sald-08.jpg?w=780")',
+   'url("https://www.cookingclassy.com/wp-content/uploads/2018/02/greek-salad-4.jpg")',
+   'url("https://pinchofyum.com/wp-content/uploads/Best-Easy-Pasta-Salad-Recipe.jpg")',
+   'url("https://dinnerthendessert.com/wp-content/uploads/2018/08/Macaroni-Salad.jpg")',
+   'url("https://www.jessicagavin.com/wp-content/uploads/2018/03/cobb-salad-7B-1200.jpg")',
+   
 
 ]
 
@@ -228,6 +241,34 @@ function Desserts() {
     items[5].style.backgroundSize = '100% 100%'
  
 }
+  
+function Salads() {
+  Jack = document.getElementById("Reyes")
+  Jack.innerHTML = ''
+  Jack.innerHTML += SaladsDivs[0]
+  Jack.innerHTML += SaladsDivs[1]
+  Jack.innerHTML += SaladsDivs[2]
+  Jack.innerHTML += SaladsDivs[3]
+  Jack.innerHTML += SaladsDivs[4]
+  Jack.innerHTML += SaladsDivs[5]
+  //alert ("You have chosen to see Salads")
+  items = document.getElementsByClassName("item")
+    items[0].style.background = SaladsImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = SaladsImages[1]
+    items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = SaladsImages[2]
+    items[2].style.backgroundSize = '100% 100%'
+    items[3].style.background = SaladsImages[3]
+    items[3].style.backgroundSize = '100% 100%'
+    items[4].style.background = SaladsImages[4]
+    items[4].style.backgroundSize = '100% 100%'
+    items[5].style.background = SaladsImages[5]
+    items[5].style.backgroundSize = '100% 100%'
+ 
+}
+  
+  
 
 
 
@@ -277,6 +318,23 @@ dessertsDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Churros <span class="price">$1</span><br /><small>is a fried-dough pastry.dipped in champurrado, hot chocolate or dulce de leche</small></p></div>',
 
 ]
+  
+saladsDivs = [
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Caesar Salad <span class="price">$8.59</span><br /><small>gets its swagger from a great Caesar dressing recipe</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Waldorf Salad <span class="price">$8.75</span><br /><small> recipe consisted only of diced red-skinned apples, celery, and mayonnaise</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Greek Salad <span class="price">$10.25</span><br /><small>Greek salad is made with pieces of tomatoes, sliced cucumbers, onion, feta cheese, and olives, typically seasoned with salt and oregano, and dressed with olive oil</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Pasta Salad <span class="price">$9.25</span><br /><small>dish prepared with one or more types of pasta, almost always chilled, and most often tossed in a vinegar, oil, or mayonnaise-based dressing</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Macaroni Salad <span class="price">$7.25</span><br /><small> Macaroni salad is an easy pasta salad that’s a mix of elbow pasta, mayonnaise, vinegar, sugar and relish</small></p></div>',
+  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Cobb Salad <span class="price">$8.99</span><br /><small>American garden salad typically made with chopped salad greens, tomato, crisp bacon, boiled, grilled or roasted chicken breast, hard-boiled eggs, avocado, chives, Roquefort cheese, and red-wine vinaigrette</small></p></div>',
+  
+]
+  
 
 
   
